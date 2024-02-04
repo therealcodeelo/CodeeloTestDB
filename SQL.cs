@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodeeloTestDB
 {
@@ -26,7 +20,6 @@ namespace CodeeloTestDB
                 command.ExecuteNonQuery();
             }
         }
-
         public static int Authenticate(string login,string password)
         {
             using (var connection = new SqlConnection(CONNECTION_STRING))
